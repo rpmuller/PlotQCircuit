@@ -231,3 +231,8 @@ def render_label(label, inits={}):
         else:
             return r'$|%s\rangle$' % inits[label]
     return r'$|%s\rangle$' % label
+
+# Define symbols to simplify writing
+H,X,Y,Z,S,T,M = 'HXYZSTM'
+CNOT,CPHASE,CZ,CX,TOFFOLI,SWAP,NOP = 'CNOT','CPHASE','CZ','CX','TOFFOLI','SWAP','NOP'
+qa,qb,qc,qd,q0,q1,q2,q3 = 'q_a','q_b','q_c','q_d','q_0','q_1','q_2','q_3'
