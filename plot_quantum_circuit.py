@@ -130,7 +130,7 @@ def text(ax,x,y,textstr,plot_params,box=False):
     if box:
         bbox = dict(ec='k',fc='w',fill=True,lw=linewidth)
     else:
-        bbox=False
+        bbox= dict(fill=False,lw=0)
     ax.text(x,y,textstr,color='k',ha='center',va='center',bbox=bbox,size=fontsize)
     return
 
